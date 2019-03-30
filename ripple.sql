@@ -395,7 +395,13 @@ CREATE TABLE IF NOT EXISTS `system_settings` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
-INSERT INTO `system_settings` (`id`, `name`, `value_int`, `value_string`) VALUES (NULL, 'registrations_enabled', '1', 'True');
+INSERT INTO `system_settings` 
+  (`id`, `name`, `value_int`, `value_string`) VALUES 
+  (NULL, 'registrations_enabled', '1', 'True')
+  (NULL, 'aql_threshold_std', '0', '999999999'), 
+  (NULL, 'aql_threshold_mania', '0', '999999999'), 
+  (NULL, 'aql_threshold_taiko', '0', '999999999'), 
+  (NULL, 'aql_threshold_ctb', '0', '999999999');
 
 CREATE TABLE IF NOT EXISTS `tokens` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
