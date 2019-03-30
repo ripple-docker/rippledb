@@ -399,7 +399,7 @@ CREATE TABLE IF NOT EXISTS `system_settings` (
 
 INSERT INTO `system_settings` 
   (`id`, `name`, `value_int`, `value_string`) VALUES 
-  (NULL, 'registrations_enabled', '1', 'True')
+  (NULL, 'registrations_enabled', '1', 'True'),
   (NULL, 'aql_threshold_std', '0', '999999999'), 
   (NULL, 'aql_threshold_mania', '0', '999999999'), 
   (NULL, 'aql_threshold_taiko', '0', '999999999'), 
